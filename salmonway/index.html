@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Salmonway</title>
+  <meta name="description" content="" />
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />  
+</head>
+<body>
+  <div class="page" id="page">
+    <div class="top">
+      <a class="logo" href="/"><img src="img/salmonway-logo.png" alt="логотип" /></a>
+      <div class="contacts">
+       <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+       <a href="mailto:mail@mail.ru">mail@mail.ru</a>
+      </div>
+    </div>
+
+    <div class="text">
+      <div class="headline">СКОРО</div>
+      <div class="intro">здесь появится сайт компании “SALMONWAY”</div>
+    </div>
+
+    <div class="socials">
+      <a class="tlgrm" href="#"></a>
+      <a class="insta" href="https://instagram.com/"></a>
+      <a class="fb" href="https://facebook.com/"></a>
+      <a class="vk" href="https://vk.com/"></a>
+    </div>
+  </div>
+  <script>
+  function setDocHeight() {
+   var vh = window.innerHeight * 0.01;
+   document.getElementById('page').style.setProperty('--vh', vh + 'px'); 
+  }
+  window.addEventListener('resize', function () {
+   setDocHeight();
+  });
+  window.addEventListener('orientationchange', function () {
+   setDocHeight();
+  });
+  </script>
+</body>
+</html>
