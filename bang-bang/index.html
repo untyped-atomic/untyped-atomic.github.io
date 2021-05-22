@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Главная Bang-Bang Shop</title>
+	<meta name="description" content="" />
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/all.css" />
+  <link rel="stylesheet" type="text/css" href="css/template_styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+  <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script> 
+  <script src="js/slick.min.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+	
+</head>
+<body>
+ <div class="container">
+ 	<header class="header">
+ 	 <div class="header-top">
+       <div class="wrapper">
+        <div class="header-top-inner flex flex-between">
+          <div class="header-city">
+           <select class="select-city" id="city_select">
+           	<option>Москва</option>
+            <option>Нижний Новгород</option>
+           </select>   
+          </div>
+          <select id="width_tmp_select">
+            <option id="width_tmp_option"></option>
+          </select>
+          <div class="header-hours"><span>Время работы </span>с 10:00 до 21:00</div>
+        </div>
+       </div>
+ 	 </div>
+ 	 <div class="header-middle">
+       <div class="wrapper">
+         <div class="header-middle-inner flex flex-between flex-align-center">
+           <div class="logo"><a href="/"><img src="images/img/logo.png" alt="логотип" /></a></div>
+           <div class="header-search">
+           	 <form class="header-search-form flex flex-nowrap">
+           		<input type="text" placeholder="Поиск среди 2358 товаров" />
+                <input type="submit" value=""/> 
+           	 </form>
+           </div>
+           <div class="header-iconset flex">
+            <a href="#" class="header-icon search" id="search-btn"></a>
+           	<a href="#" class="header-icon little-cart" id="little-cart">
+           	  <div class="header-icon-count">1</div>
+           	</a>
+           	<a href="#" class="header-icon favorites" id="favorites">
+           	  <div class="header-icon-count">2</div>
+           	</a>
+           	<a href="#" class="header-icon user"></a>
+           </div>
+         </div>
+       </div>
+ 	 </div>
+ 	 <div class="header-bottom">
+       <div class="wrapper">
+         <div class="header-bottom-inner flex flex-between flex-align-center">
+          <nav class="header-nav">
+          	<ul class="header-menu flex">
+          	  <li><a href="#">Доставка</a></li>
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Возврат и обмен</a></li>
+              <li><a href="#">Статьи</a></li>
+          	</ul>
+          </nav> 
+          <a href="tel:+78007774312" class="header-phone">800 777 43 12</a>
+          <div id="hm-btn"><span></span><span></span><span></span></div>
+         </div>
+       </div>
+ 	 </div>	
+ 	</header>
+
+ 	<main class="main">
+
+    <div class="top-slider-wrap">
+     <div class="top-slider">
+      <div><img src="images/pics/top-slide1.jpg" alt=""/></div>
+      <div><img src="images/pics/top-slide1.jpg" alt=""/></div>
+      <div><img src="images/pics/top-slide1.jpg" alt=""/></div>
+     </div> 
+     <div class="top-slider-nav"> 
+      <div class="top-slider-nav-inner flex flex-between">
+       <div class="arrow arrow-prev"></div>
+       <div class="arrow arrow-next"></div>
+      </div>
+     </div>  
+    </div>
+    
+    <div class="catalog">
+      <h2><span class="purple-bg">Каталог</span></h2>
+      <div class="catalog-category-list flex flex-between flex-wrap">
+       <a href="category" class="catalog-category">
+        <div class="catalog-category__pic"><img src="images/pics/category1.png" alt=""/></div> 
+        <div class="catalog-category__title"><div>Карнавальные</div><div>костюмы</div></div>
+       </a>
+       <a href="category" class="catalog-category">
+        <div class="catalog-category__pic"><img src="images/pics/category2.png" alt=""/></div> 
+        <div class="catalog-category__title">Категория</div>
+       </a>
+       <a href="category" class="catalog-category">
+        <div class="catalog-category__pic"><img src="images/pics/category3.png" alt=""/></div> 
+        <div class="catalog-category__title">Категория</div>
+       </a>
+       <a href="category" class="catalog-category">
+        <div class="catalog-category__pic"><img src="images/pics/category4.png" alt=""/></div> 
+        <div class="catalog-category__title">         
+          <span id="curved-letter1">П</span>
+          <span id="curved-letter2">л</span>
+          <span id="curved-letter3">ю</span>
+          <span id="curved-letter4">ш</span>
+          <span id="curved-letter5">е</span>
+          <span id="curved-letter6">в</span>
+          <span id="curved-letter7">ы</span>
+          <span id="curved-letter8">е</span>
+          </div>
+          <div class="catalog-category__title">
+          <span id="curved-letter9">м</span>
+          <span id="curved-letter10">е</span>
+          <span id="curved-letter11">д</span>
+          <span id="curved-letter12">в</span>
+          <span id="curved-letter13">е</span>
+          <span id="curved-letter14">д</span>
+          <span id="curved-letter15">и</span>
+        </div>
+       </a>
+       <a href="category" class="catalog-category">
+        <div class="catalog-category__pic"><img src="images/pics/category5.png" alt=""/></div> 
+        <div class="catalog-category__title">Название<br/>категории</div>
+       </a>
+       <a href="category" class="catalog-category">
+        <div class="catalog-category__pic"><img src="images/pics/category6.png" alt=""/></div> 
+        <div class="catalog-category__title">Категория</div>
+       </a> 
+      </div>
+
+    </div>
+
+
+
+   <div class="offers">
+    <h2><span class="yellow-bg">Скидки и акции</span></h2>
+    <div class="offers-slider-wrap"> 
+     <div class="offers-slider-holder">
+      <div class="offers-slider">
+        <div><img src="images/pics/offer-slide1.png" alt=""/></div>
+        <div><img src="images/pics/offer-slide2.png" alt=""/></div>
+        <div><img src="images/pics/offer-slide1.png" alt=""/></div>
+       </div> 
+     </div>
+
+     <div class="offers-slider-nav"> 
+      <div class="offers-slider-nav-inner flex flex-between">
+       <div class="arrow arrow-prev"></div>
+       <div class="arrow arrow-next"></div>
+      </div>
+     </div>            
+    </div>
+  </div>
+
+  <div class="novelty">
+    <h2><span class="purple-bg">Новинки</span></h2>
+    <div class="wrapper">
+      <div class="shopitem-list flex flex-between flex-wrap">
+        <div class="shopitem">
+         <div class="discount-label">-50%</div> 
+         <div class="new-label">NEW</div>
+         <a class="tofavorite-btn" href="#"></a>
+         <div class="shopitem-pic"><a href="product"><img src="images/pics/item-pic.png" alt=""/></a></div>
+         <div class="shopitem-rating"><img src="images/img/rating.png" alt=""/></div>
+         <a href="product" class="shopitem-title">Мужская футболка Внутренние во...</a>
+         <div class="shopitem-action flex flex-align-center">
+          <a href="#" class="shopitem-tocart-btn"></a>
+          <div class="shopitem-price flex">
+            <div class="shopitem-discount-price">999 <i class="fas fa-ruble-sign"></i></div>
+            <div class="shopitem-old-price">2000 <i class="fas fa-ruble-sign"></i></div>
+          </div>
+         </div>
+         </div>
+
+         <div class="shopitem">
+         <div class="discount-label">-50%</div> 
+         <div class="new-label">NEW</div>
+         <a class="tofavorite-btn" href="#"></a>
+         <div class="shopitem-pic"><a href="product"><img src="images/pics/item-pic.png" alt=""/></a></div>
+         <div class="shopitem-rating"><img src="images/img/rating.png" alt=""/></div>
+         <a href="product" class="shopitem-title">Мужская футболка Внутренние во...</a>
+         <div class="shopitem-action flex flex-align-center">
+          <a href="#" class="shopitem-tocart-btn"></a>
+          <div class="shopitem-price flex">
+            <div class="shopitem-discount-price">999 <i class="fas fa-ruble-sign"></i></div>
+            <div class="shopitem-old-price">2000 <i class="fas fa-ruble-sign"></i></div>
+          </div>
+         </div>
+         </div>
+
+         <div class="shopitem">
+         <div class="discount-label">-50%</div> 
+         <div class="new-label">NEW</div>
+         <a class="tofavorite-btn" href="#"></a>
+         <div class="shopitem-pic"><a href="product"><img src="images/pics/item-pic.png" alt=""/></a></div>
+         <div class="shopitem-rating"><img src="images/img/rating.png" alt=""/></div>
+         <a href="product" class="shopitem-title">Мужская футболка Внутренние во...</a>
+         <div class="shopitem-action flex flex-align-center">
+          <a href="#" class="shopitem-tocart-btn"></a>
+          <div class="shopitem-price flex">
+            <div class="shopitem-discount-price">999 <i class="fas fa-ruble-sign"></i></div>
+            <div class="shopitem-old-price">2000 <i class="fas fa-ruble-sign"></i></div>
+          </div>
+         </div>
+         </div>
+
+         <div class="shopitem">
+         <div class="discount-label">-50%</div> 
+         <div class="new-label">NEW</div>
+         <a class="tofavorite-btn" href="#"></a>
+         <div class="shopitem-pic"><a href="product"><img src="images/pics/item-pic.png" alt=""/></a></div>
+         <div class="shopitem-rating"><img src="images/img/rating.png" alt=""/></div>
+         <a href="product" class="shopitem-title">Мужская футболка Внутренние во...</a>
+         <div class="shopitem-action flex flex-align-center">
+          <a href="#" class="shopitem-tocart-btn"></a>
+          <div class="shopitem-price flex">
+            <div class="shopitem-discount-price">999 <i class="fas fa-ruble-sign"></i></div>
+            <div class="shopitem-old-price">2000 <i class="fas fa-ruble-sign"></i></div>
+          </div>
+         </div>
+         </div>
+         
+        </div>
+      </div>
+    </div>
+  
+
+   <div class="reviews">
+    <h2><span class="yellow-bg">Отзывы</span></h2>
+    <div class="reviews-slider-wrap">
+    <div class="reviews-slider-holder">
+     <div class="reviews-slider">
+      <div>
+       <div class="review-item">
+        <div class="review-inner">
+          <div class="review-author flex flex-align-center">
+           <div class="review-author__pic"><img src="images/pics/client1.png" alt=""/></div>
+           <div class="review-author__info">
+            <div class="review-author__name">Марина Иванова</div>
+            <div class="review-author__rating">
+              <div class="shopitem-rating"><img src="images/img/rating.png" alt=""/></div>
+            </div>
+           </div>
+          </div>
+          <div class="review-text">Товарищи! консультация с широким активом требуют определения и уточнения форм развития. Задача организации, в особенности же сложившаяся структура организации позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Повседневная практика показывает, что укрепление и развитие структуры позволяет оценить значение систем массового участия.</div>
+       </div>
+      </div>
+     </div>
+      <div>
+        <div class="review-item">
+         <div class="review-inner"> 
+          <div class="review-author flex flex-align-center">
+           <div class="review-author__pic"><img src="images/pics/client2.png" alt=""/></div>
+           <div class="review-author__info">
+            <div class="review-author__name">Владимир Петров</div>
+            <div class="review-author__rating">
+              <div class="shopitem-rating"><img src="images/img/rating.png" alt=""/></div>
+            </div>
+           </div>
+          </div>
+          <div class="review-text">Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки направлений прогрессивного развития. Не следует, однако забывать, что консультация с широким активом способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс.</div>
+         </div>
+       </div>
+      </div>
+
+      <div>
+        <div class="review-item">
+         <div class="review-inner">   
+          <div class="review-author flex">
+           <div class="reviews-author__pic"><img src="images/pics/client1.png" alt=""/></div>
+           <div class="reviews-author__info">
+            <div class="reviews-author__name">Марина Иванова</div>
+            <div class="reviews-author__rate"><img src="images/pics/client1.png" alt=""/></div>
+           </div>
+          </div>
+          <div class="review-text">Товарищи! консультация с широким активом требуют определения и уточнения форм развития. Задача организации, в особенности же сложившаяся структура организации позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Повседневная практика показывает, что укрепление и развитие структуры позволяет оценить значение систем массового участия.</div>
+         </div>
+        </div>
+      </div>
+     </div> 
+    </div>
+     <div class="reviews-slider-nav"> 
+      <div class="reviews-slider-nav-inner flex flex-between">
+       <div class="arrow arrow-prev"></div>
+       <div class="arrow arrow-next"></div>
+      </div>
+     </div>  
+    </div>
+  </div>
+
+ 	</main>
+
+ 	<footer class="footer">
+    <div class="footer-top">
+      <div class="wrapper">
+       <div class="footer-top-inner flex flex-between flex-align-center">
+         <a class="footer-phone" href="tel:+78007774312">8 800 777 43 12</a>
+         <ul class="footer-menu flex">
+          <li><a href="#">Таблица размеров</a></li>
+          <li><a href="#">Сертификаты</a></li>
+          <li><a href="#">Бренды</a></li>
+         </ul>
+         <div class="footer-contacts flex flex-align-center">
+          <a class="footer-contacts__mail" href="mailto:info@bang-bang.shop">info@bang-bang.shop</a>
+          <a class="footer-contacts__vk" href="https://vk.com/"></a>
+         </div>
+       </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="wrapper">
+       <div class="footer-bottom-inner flex flex-between flex-align-center">
+        <div>© bang-bang.shop | Все права защищены</div>
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Публичная оферта</a>
+       </div>
+      </div>
+    </div>
+ 	</footer>
+
+ </div>
+</body>
+</html>
