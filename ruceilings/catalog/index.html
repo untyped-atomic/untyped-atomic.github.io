@@ -1,0 +1,415 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Список товаров RuCeilings</title>
+  <meta name="description" content="" />
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style/slick.css" />
+  <link rel="stylesheet" type="text/css" href="style/jquery-ui.min.css" />
+  <link rel="stylesheet" type="text/css" href="style/jquery.fancybox.min.css" />
+  <link rel="stylesheet" type="text/css" href="style/styles.css" />
+  <link rel="stylesheet" type="text/css" href="style/template_styles.css" />
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>  
+  <script src="js/script.js"></script>   
+</head>
+<body>
+
+<div class="page">
+
+<div class="container">
+
+ <header class="header">
+
+  <div class="header-top"> 
+   <div class="wrapper">
+    <div class="header-top-inner flex flex-between">
+     <nav class="header-nav">  
+      <ul class="header-nav__menu flex flex-align-center">
+       <li><a href="../catalog/">Каталог</a></li>
+       <li><a href="#">О компании</a></li>
+       <li><a href="#">Оплата</a></li>
+       <li><a href="#">Доставка</a></li>
+       <li><a href="#">Гарантия</a></li>
+       <li><a href="#">Обзоры товаров</a></li>
+       <li><a href="../contacts/">Контакты</a></li>
+      </ul>
+     </nav>
+     <div class="header-actions flex">
+      <a class="header-actions__signin" href="#">Войти</a> 
+      <span>/</span>
+      <a class="header-actions__register" href="#">Регистрация</a>
+     </div> 
+    </div>
+   </div>
+  </div>
+
+  <div class="header-btm">
+  <div class="wrapper">
+  <div class="header-btm-inner flex">
+   <div class="header-logo"><a href="../"><img class="image-fluid" src="../images/svg/logo.svg" alt="" /></a></div>
+   <div class="header-search">
+    <form class="header-search-form">
+     <div class="flex flex-nowrap">
+       <input type="text" name="text" placeholder="Поиск" />
+       <input type="submit" disabled="disasbled" value="" /> 
+     </div>
+    </form>
+   </div>
+   <div class="header-question-btn"></div>
+   <div class="header-info">
+    <div class="header-info__city">Нижний Новгород</div>
+    <a href="tel:+78312128506" class="header-info__phone"><span>8 (831)</span> 212 85 06</a>  
+   </div>
+   <div class="header-working-hours flex flex-nowrap">
+    <div class="header-working-hours__days">
+      <div>Пн</div>
+      <div>Вс</div>
+    </div>
+    <div class="header-working-hours__time">
+     <div>08:00</div>
+     <div>20:00</div>
+   </div>
+  </div>
+  
+  <div class="header-compare">
+    <div class="header-compare__btn"><span>Сравнить</span></div> 
+    <div class="header-compare__data">В сравнении: <span id="compare-count">12</span></div>
+  </div>
+  <div class="header-cart">
+    <div class="header-cart__btn"><span>Оформить</span></div> 
+    <div class="header-cart__data"><span>286</span> поз. / <span>328 547.00</span> руб.</div>
+  </div>
+
+  <div id="hm-btn">
+   <div></div>
+   <div></div>
+   <div></div>
+  </div>
+  
+  </div>
+  </div>
+ </div>
+
+ </header> 
+
+
+
+
+<main class="main">
+
+<div class="flex"> 
+
+ <div class="main-content">
+
+  <div class="wrapper">
+
+  <div class="breadcrumbs"><a href="/">Каталог товаров</a> <span>&gt;</span> <a href="#">Профиль (багет) для натяжных потолков</a> <span>&gt;</span> Профиль (багет) ПВХ</div>
+
+  
+  <div class="subcategory-list flex flex-wrap">
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="../images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Багет ПВХ</div> 
+       </div>   
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="../images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">ALU-профиль</div>
+       </div>     
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="../images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Гибкий профиль Flext</div>
+     </div>
+    </div>
+  </div>
+
+  <div class="top-filter">
+   <form id="top-filter-form">
+    <div class="flex flex-between">
+     <div class="top-filter-form__set flex flex-between flex-align-center">
+      <div class="top-filter-form__label">Сортировать по:</div>
+      <div id="sort-by-name" class="top-filter-form__option">названию</div>
+      <div id="sort-by-price" class="top-filter-form__option active">цене &darr;</div>
+   </div>
+   <div class="top-filter-form__set flex flex-between flex-align-center">
+    <div class="top-filter-form__label">Показывать по:</div>
+    <div class="top-filter-form__select">
+     <select id="items-per-page" name="items-per-page">
+      <option value="0">48</option>
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="48">48</option>
+     </select>
+    </div>
+   </div>
+   <div class="top-filter-form__set flex flex-between flex-align-center">
+    <div class="top-filter-form__label">Вид:</div>
+    <div id="show-as-list" class="top-filter-form__option"></div>
+    <div id="show-as-grid" class="top-filter-form__option active active"></div>
+   </div>
+    </div>
+   </form>
+  </div>
+
+  <div class="productlist flex flex-wrap"> 
+    <div class="productlist-item">
+     <div class="productlist-item__pic"><img src="../images/pics/product1.png" alt=""/></div>
+     <div class="productlist-item__info">
+      <div class="productlist-item__name">Вставка прозрачная для парящих потолков (ПВХ)</div>
+      <div class="productlist-item__status in">В наличии</div>
+      <div class="productlist-item__price"><span>20 586.32</span> руб.</div>
+      <div class="productlist-item__hidden">
+       <div class="productlist-item__quantity"> 
+       <div class="item-quantity-group flex flex-nowrap">
+        <div class="item-quantity-down">-</div>
+        <input id="quantity" class="item-quantity" type="text" value="5м" name="quantity">
+        <div class="item-quantity-up">+</div>
+       </div>
+       </div>
+       <div class="productlist-item__actions flex flex-nowrwap">
+        <div class="productlist-item__tocart-btn">В корзину</div> 
+        <div class="productlist-item__compare-btn"></div>        
+       </div>
+       <div class="productlist-item__marking">Артикул: 000540</div>
+       </div>
+     </div>
+    </div>
+
+    <div class="productlist-item">
+     <div class="productlist-item__pic"><img src="../images/pics/product2.png" alt=""/></div>
+     <div class="productlist-item__info">
+      <div class="productlist-item__name">Багет ПВХ разделительный (2,5м)</div>
+      <div class="productlist-item__status in">В наличии</div>
+      <div class="productlist-item__price"><span>1 295.00</span> руб.</div>
+      <div class="productlist-item__hidden">
+       <div class="productlist-item__quantity">
+        <div class="item-quantity-group flex flex-nowrap">
+        <div class="item-quantity-down">-</div>
+        <input id="quantity" class="item-quantity" type="text" value="5м" name="quantity">
+        <div class="item-quantity-up">+</div>
+       </div>
+     </div>
+       <div class="productlist-item__actions flex flex-nowrwap">
+        <div class="productlist-item__tocart-btn">В корзину</div> 
+        <div class="productlist-item__compare-btn"></div>        
+       </div>
+       <div class="productlist-item__marking">Артикул: 000540</div>
+       </div>
+     </div>
+    </div>
+
+    <div class="productlist-item">
+     <div class="productlist-item__pic"><img src="../images/pics/product3.png" alt=""/></div>
+     <div class="productlist-item__info">
+      <div class="productlist-item__name">Алюминиевый отбойник Y-образный перфорированный</div>
+      <div class="productlist-item__status out">Закончились</div>
+      <div class="productlist-item__price"><span>186.00</span> руб.</div>
+      <div class="productlist-item__hidden">
+       <div class="productlist-item__quantity">
+        <div class="item-quantity-group flex flex-nowrap">
+        <div class="item-quantity-down">-</div>
+        <input id="quantity" class="item-quantity" type="text" value="5м" name="quantity">
+        <div class="item-quantity-up">+</div>
+       </div>
+       </div>
+       <div class="productlist-item__actions flex flex-nowrwap">
+        <div class="productlist-item__tocart-btn">В корзину</div> 
+        <div class="productlist-item__compare-btn"></div>        
+       </div>
+       <div class="productlist-item__marking">Артикул: 000540</div>
+       </div>
+     </div>
+    </div>
+
+    <div class="productlist-item">
+     <div class="productlist-item__pic"><img src="../images/pics/product4.png" alt=""/></div>
+     <div class="productlist-item__info">
+      <div class="productlist-item__name">Шнур 10 мм без тесьмы №0.0</div>
+      <div class="productlist-item__status in">В наличии</div>
+      <div class="productlist-item__price"><span>120 291.32</span> руб.</div>
+      <div class="productlist-item__hidden">
+       <div class="productlist-item__quantity">
+        <div class="item-quantity-group flex flex-nowrap">
+        <div class="item-quantity-down">-</div>
+        <input id="quantity" class="item-quantity" type="text" value="5м" name="quantity">
+        <div class="item-quantity-up">+</div>
+       </div>
+     </div>
+       <div class="productlist-item__actions flex flex-nowrwap">
+        <div class="productlist-item__tocart-btn">В корзину</div> 
+        <div class="productlist-item__compare-btn"></div>        
+       </div>
+       <div class="productlist-item__marking">Артикул: 000540</div>
+       </div>
+     </div>
+    </div>
+
+    <div class="productlist-item">
+     <div class="productlist-item__pic"><img src="../images/pics/product4.png" alt=""/></div>
+     <div class="productlist-item__info">
+      <div class="productlist-item__name">Шнур 10 мм без тесьмы №0.0</div>
+      <div class="productlist-item__status in">В наличии</div>
+      <div class="productlist-item__price"><span>120 291.32</span> руб.</div>
+      <div class="productlist-item__hidden">
+       <div class="productlist-item__quantity">
+        <div class="item-quantity-group flex flex-nowrap">
+        <div class="item-quantity-down">-</div>
+        <input id="quantity" class="item-quantity" type="text" value="5м" name="quantity">
+        <div class="item-quantity-up">+</div>
+      </div>
+       </div>
+       <div class="productlist-item__actions flex flex-nowrwap">
+        <div class="productlist-item__tocart-btn">В корзину</div> 
+        <div class="productlist-item__compare-btn"></div>        
+       </div>
+       <div class="productlist-item__marking">Артикул: 000540</div>
+       </div>
+     </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <div class="sidebar">
+    <ul class="sidebar-menu">
+     <li><a href="#">Багет ПВХ</a></li>
+     <li><a href="#">ALU-профиль</a></li>
+     <li><a href="#">Гибкий профиль Flext</a></li>
+     <li><a href="#">Гарпун</a>
+      <ul><li><a href="#">Вставка</a></li></ul>
+     </li>
+     <li><a href="#">Декоративный шнур</a></li>
+     <li><a href="#">Освещение Экола</a></li>
+     <li><a href="#">Карнизы и бленда</a></li>
+     <li><a href="#">Монтажные платформы</a></li>
+     <li><a href="#">Платформы для светильников</a></li>
+     <li><a href="#">Кольца протекторные</a></li>
+     <li><a href="#">Обводы труб</a></li>
+     <li><a href="#">Обводы труб (пластина)</a></li>
+     <li><a href="#">Термоквадраты</a></li>
+     <li><a href="#">Вентиляционные решетки</a></li>
+     <li><a href="#">Ревизионные люки</a></li>
+     <li><a href="#">Диффузоры, вентиляция</a></li>
+     <li><a href="#">Пластик ПВХ</a></li>
+     <li><a href="#">Клей, очиститель клея</a></li>
+     <li><a href="#">Брус, фанера</a></li>
+     <li><a href="#">Саморезы</a></li>
+     <li><a href="#">Дюбеля</a></li>
+     <li><a href="#">Подвесы</a></li>
+     <li><a href="#">Уголки</a></li>
+     <li><a href="#">Буры, биты, сверла</a></li>
+     <li><a href="#">Герметик, монтажная пена</a></li>
+     <li><a href="#">Электрика</a></li>
+     <li><a href="#">Сопутствующий товар</a></li>
+     <li><a href="#">«Звёздное небо»</a></li>
+     <li><a href="#">Инструменты</a></li>
+     <li><a href="#">Газовые баллоны, аксессуары</a></li>
+    </ul>
+
+    <div class="sidebar-filter">
+      <form id="sidebar-filter-form">
+       <div class="sidebar-filter-parameter">
+         <div class="sidebar-filter-parameter__label">Розничная цена</div>
+         <div class="sidebar-filter-parameter__body">
+          <div class="price-range-group flex">
+          <span class="price-range-text">от</span>
+          <input class="price-range-input" name="price_from" size="5" type="text" value="1 135">
+          <span class="price-range-text">до</span>
+          <input class="price-range-input" name="price_to" size="5" type="text" value="12 548">
+          <span class="price-range-text">р.</span>
+        </div>
+<div id="price-range-slider" class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%;"></span></div>
+         </div>
+       </div>
+       <div class="sidebar-filter-parameter">
+         <div class="sidebar-filter-parameter__label">Цвет</div>
+         <div class="sidebar-filter-parameter__body">
+          <div class="flex flex-between">
+            <div class="color-filter-column">
+              <label class="checkbox-container">бежевый<input type="checkbox" checked="checked"><span class="checkmark"></span></label>
+              <label class="checkbox-container">бук<input type="checkbox"><span class="checkmark"></span></label>
+              <label class="checkbox-container">вишня<input type="checkbox"><span class="checkmark"></span></label>
+              <label class="checkbox-container">чёрный<input type="checkbox"><span class="checkmark"></span></label>
+              <label class="checkbox-container">серый<input type="checkbox"><span class="checkmark"></span></label>
+            </div>
+            <div class="color-filter-column">
+              <label class="checkbox-container">белый<input type="checkbox" checked="checked"><span class="checkmark"></span></label>
+              <label class="checkbox-container">металик<input type="checkbox"><span class="checkmark"></span></label>
+              <label class="checkbox-container">мрамор<input type="checkbox"><span class="checkmark"></span></label>
+              <label class="checkbox-container">зелёный<input type="checkbox"><span class="checkmark"></span></label>
+              <label class="checkbox-container">синий<input type="checkbox"><span class="checkmark"></span></label>
+            </div>
+          </div>
+       </div>
+      </div>
+       <div class="sidebar-filter-parameter">
+         <div class="sidebar-filter-parameter__label">Свёрнутые параметры</div>
+         <div class="sidebar-filter-parameter__body"></div>
+       </div>
+       <div class="sidebar-filter-buttons flex flex-between">
+         <input type="submit" class="btn red-btn sidebar-filter-form__submit" disabled="disasbled" value="Применить" />
+         <div class="btn gray-btn sidebar-filter-form__reset">Сброс</div>
+       </div>
+
+      </form>
+    </div>
+  </div>
+
+
+</div>
+</main>
+
+<footer class="footer">
+  <div class="wrapper">
+   <div class="footer-inner flex flex-between">
+
+    <div class="footer-item">
+     <ul class="footer-menu">
+      <li><a href="#">Как сделать заказ?</a></li>
+      <li><a href="#">Оплата</a></li>
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Гарантия</a></li>
+     </ul> 
+    </div>
+
+   <div class="footer-item">
+    <ul class="footer-menu">
+     <li><a href="#">О нас</a></li>
+     <li><a href="#">Контакты</a></li>
+     <li><a href="#">Политика компании в отношении обработки персональных данных</a></li>
+    </ul>
+   </div>
+
+   <div class="footer-item">
+    <div class="footer-info">
+     <div class="footer-info__text">Интернет магазин оптовых цен Русилингс, 2020<br/>Все права защищены</div>
+     <div class="footer-info__socials flex">
+      <a class="footer-info__socials__fb" href="#"></a>
+      <a class="footer-info__socials__twitter" href="#"></a>
+      <a class="footer-info__socials__vk" href="#"></a>
+      <a class="footer-info__socials__youtube" href="#"></a>
+     </div> 
+    </div>
+  </div>
+
+   </div>
+  </div>
+</footer>
+
+</div><!-- /container	-->
+</div><!-- /page-->
+</body>
+</html>

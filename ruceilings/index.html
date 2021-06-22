@@ -1,0 +1,433 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Главная RuCeilings</title>
+  <meta name="description" content="" />
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style/slick.css" />
+  <link rel="stylesheet" type="text/css" href="style/jquery-ui.min.css" />
+  <link rel="stylesheet" type="text/css" href="style/jquery.fancybox.min.css" />
+  <link rel="stylesheet" type="text/css" href="style/styles.css" />
+  <link rel="stylesheet" type="text/css" href="style/template_styles.css" />  
+  
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/slick.min.js"></script> 
+  <script src="js/jquery.fancybox.min.js"></script> 
+  <script src="js/script.js"></script>   
+</head>
+<body>
+
+<div class="page">
+
+<div class="container">
+
+ <header class="header">
+
+  <div class="header-top"> 
+   <div class="wrapper">
+    <div class="header-top-inner flex flex-between">
+     <nav class="header-nav">  
+      <ul class="header-nav__menu flex flex-align-center">
+       <li><a href="catalog">Каталог</a></li>
+       <li><a href="#">О компании</a></li>
+       <li><a href="#">Оплата</a></li>
+       <li><a href="#">Доставка</a></li>
+       <li><a href="#">Гарантия</a></li>
+       <li><a href="#">Обзоры товаров</a></li>
+       <li><a href="contacts">Контакты</a></li>
+      </ul>
+     </nav>
+     <div class="header-actions flex">
+      <a class="header-actions__signin" href="#">Войти</a> 
+      <span>/</span>
+      <a class="header-actions__register" href="#">Регистрация</a>
+     </div> 
+    </div>
+   </div>
+  </div>
+
+  <div class="header-btm">
+  <div class="wrapper">
+  <div class="header-btm-inner flex">
+   <div class="header-logo"><a href="/"><img class="image-fluid" src="images/svg/logo.svg" alt="" /></a></div>
+   <div class="header-search">
+    <form class="header-search-form">
+     <div class="flex flex-nowrap">
+       <input type="text" name="text" placeholder="Поиск" />
+       <input type="submit" disabled="disasbled" value="" /> 
+     </div>
+    </form>
+   </div>
+   <div class="header-question-btn"></div>
+   <div class="header-info">
+    <div class="header-info__city">Нижний Новгород</div>
+    <a href="#" class="header-info__phone"><span>8 (000)</span> 000 00 00</a>  
+   </div>
+   <div class="header-working-hours flex flex-nowrap">
+    <div class="header-working-hours__days">
+      <div>Пн</div>
+      <div>Вс</div>
+    </div>
+    <div class="header-working-hours__time">
+     <div>08:00</div>
+     <div>20:00</div>
+   </div>
+  </div>
+  
+  <div class="header-compare">
+    <div class="header-compare__btn"><span>Сравнить</span></div> 
+    <div class="header-compare__data">В сравнении: <span id="compare-count">12</span></div>
+  </div>
+  <div class="header-cart">
+    <div class="header-cart__btn"><span>Оформить</span></div> 
+    <div class="header-cart__data"><span>286</span> поз. / <span>328 547.00</span> руб.</div>
+  </div>
+
+  <div id="hm-btn">
+   <div></div>
+   <div></div>
+   <div></div>
+  </div>
+  
+  </div>
+  </div>
+ </div>
+
+ </header> 
+
+ <section class="top-slider">
+   <div>
+    <img src="images/pics/slide1.jpg" alt="">
+    <div class="slide-text">Ассортимент более <span>2000</span> наименований в наличии</div>
+   </div>
+   <div>
+    <img src="images/pics/slide1.jpg" alt="">
+    <div class="slide-text">Ассортимент более <span>2000</span> наименований в наличии</div>
+   </div>
+   <div>
+    <img src="images/pics/slide1.jpg" alt="">
+    <div class="slide-text">Ассортимент более <span>2000</span> наименований в наличии</div>
+   </div>
+   <div>
+    <img src="images/pics/slide1.jpg" alt="">
+    <div class="slide-text">Ассортимент более <span>2000</span> наименований в наличии</div>
+   </div>
+  </section> 	
+
+
+<main class="main">
+
+<div class="main-content"> 
+<div class="wrapper">
+  <section class="benefits">
+   
+   <div class="benefits-list flex flex-between">   
+    <div class="benefits-item --truck">Бесплатная доставка по городу от 2 000 рублей</div>
+    <div class="benefits-item --thumb">Высокое качество продукции</div>
+    <div class="benefits-item --file">Все товары сертифицированы</div>
+    <div class="benefits-item --check">Возможность доставки "Сегодня на сегодня"</div>    
+    <div class="benefits-item --list">Широкий ассортимент всегда в наличии</div>
+   </div>
+ 
+</section>
+
+  <section class="catalog">
+   <h2>Каталог</h2>
+   
+   <div class="catalog-list flex flex-wrap">
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Багет ПВХ</div> 
+       </div>   
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">ALU-профиль</div>
+       </div>     
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Гибкий профиль Flext</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Гарпун</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Вставка</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Декоративный шнур</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Освещение Экола</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Карнизы и бленда</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Монтажные платформы</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Платформы для светильников</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Кольца протекторные</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Монтажные платформы</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Платформы для светильников</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Кольца протекторные</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Обводы труб</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Обводы труб (пластина)</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Термоквадраты</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Вентиляционные решетки</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Ревизионные люки</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Диффузоры, вентиляция</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Пластик ПВХ</div>
+     </div>    
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Клей, очиститель клея</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Брус, фанера</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Саморезы</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Дюбеля</div>
+     </div>    
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Подвесы</div>
+     </div>    
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Уголки</div>
+     </div>    
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Буры, биты, сверла</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Герметик, монтажная пена</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Электрика</div>
+     </div>
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Сопутствующий товар</div>
+     </div>    
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">«Звёздное небо»</div>
+     </div>    
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Инструменты</div>
+     </div>    
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Шпатели</div>
+     </div>    
+    </div>
+    <div class="catalog-category">
+     <a href="#"></a>
+     <div class="flex flex-nowrap">
+      <div class="catalog-category__pic"><img src="images/pics/cat-pic1.jpg" alt="" /></div>
+      <div class="flex flex-align-center catalog-category__name">Газовые баллоны и аксессуары</div>
+     </div>    
+    </div>
+   </div>
+  </section>
+
+</div>
+</div>
+</main>
+
+<footer class="footer">
+  <div class="wrapper">
+   <div class="footer-inner flex flex-between">
+
+    <div class="footer-item">
+     <ul class="footer-menu">
+      <li><a href="#">Как сделать заказ?</a></li>
+      <li><a href="#">Оплата</a></li>
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Гарантия</a></li>
+     </ul> 
+    </div>
+
+   <div class="footer-item">
+    <ul class="footer-menu">
+     <li><a href="#">О нас</a></li>
+     <li><a href="#">Контакты</a></li>
+     <li><a href="#">Политика компании в отношении обработки персональных данных</a></li>
+    </ul>
+   </div>
+
+   <div class="footer-item">
+    <div class="footer-info">
+     <div class="footer-info__text">Интернет магазин оптовых цен Русилингс, 2020<br/>Все права защищены</div>
+     <div class="footer-info__socials flex">
+      <a class="footer-info__socials__fb" href="#"></a>
+      <a class="footer-info__socials__twitter" href="#"></a>
+      <a class="footer-info__socials__vk" href="#"></a>
+      <a class="footer-info__socials__youtube" href="#"></a>
+     </div> 
+    </div>
+  </div>
+
+   </div>
+  </div>
+</footer>
+
+</div><!-- /container	-->
+</div><!-- /page-->
+</body>
+</html>

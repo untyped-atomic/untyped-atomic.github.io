@@ -1,0 +1,384 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Корзина RuCeilings</title>
+  <meta name="description" content="" />
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style/slick.css" />
+  <link rel="stylesheet" type="text/css" href="style/jquery-ui.min.css" />
+  <link rel="stylesheet" type="text/css" href="style/jquery.fancybox.min.css" />
+  <link rel="stylesheet" type="text/css" href="style/styles.css" />
+  <link rel="stylesheet" type="text/css" href="style/template_styles.css" />
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/slick.min.js"></script> 
+  <script src="js/jquery.fancybox.min.js"></script> 
+  <script src="js/script.js"></script>   
+</head>
+<body>
+
+<div class="page">
+
+<div class="container">
+
+ <header class="header">
+
+  <div class="header-top"> 
+   <div class="wrapper">
+    <div class="header-top-inner flex flex-between">
+     <nav class="header-nav">  
+      <ul class="header-nav__menu flex flex-align-center">
+       <li><a href="../catalog/">Каталог</a></li>
+       <li><a href="#">О компании</a></li>
+       <li><a href="#">Оплата</a></li>
+       <li><a href="#">Доставка</a></li>
+       <li><a href="#">Гарантия</a></li>
+       <li><a href="#">Обзоры товаров</a></li>
+       <li><a href="../contacts/">Контакты</a></li>
+      </ul>
+     </nav>
+     <div class="header-actions flex">
+      <a class="header-actions__signin" href="#">Войти</a> 
+      <span>/</span>
+      <a class="header-actions__register" href="#">Регистрация</a>
+     </div> 
+    </div>
+   </div>
+  </div>
+
+  <div class="header-btm">
+  <div class="wrapper">
+  <div class="header-btm-inner flex">
+   <div class="header-logo"><a href="../"><img class="image-fluid" src="../images/svg/logo.svg" alt="" /></a></div>
+   <div class="header-search">
+    <form class="header-search-form">
+     <div class="flex flex-nowrap">
+       <input type="text" name="text" placeholder="Поиск" />
+       <input type="submit" disabled="disasbled" value="" /> 
+     </div>
+    </form>
+   </div>
+   <div class="header-question-btn"></div>
+   <div class="header-info">
+    <div class="header-info__city">Нижний Новгород</div>
+    <a href="#" class="header-info__phone"><span>8 (000)</span> 000 00 00</a>  
+   </div>
+   <div class="header-working-hours flex flex-nowrap">
+    <div class="header-working-hours__days">
+      <div>Пн</div>
+      <div>Вс</div>
+    </div>
+    <div class="header-working-hours__time">
+     <div>08:00</div>
+     <div>20:00</div>
+   </div>
+  </div>
+  
+  <div class="header-compare">
+    <div class="header-compare__btn"><span>Сравнить</span></div> 
+    <div class="header-compare__data">В сравнении: <span id="compare-count">12</span></div>
+  </div>
+  <div class="header-cart">
+    <div class="header-cart__btn"><span>Оформить</span></div> 
+    <div class="header-cart__data"><span>286</span> поз. / <span>328 547.00</span> руб.</div>
+  </div>
+
+  <div id="hm-btn">
+   <div></div>
+   <div></div>
+   <div></div>
+  </div>
+
+  </div>
+  </div>
+ </div>
+
+ </header> 
+
+	
+<section class="benefits">  
+<div class="wrapper"> 
+  <div class="benefits-list flex flex-between">   
+  <div class="benefits-item --truck">Бесплатная доставка по городу от 2 000 рублей</div>
+  <div class="benefits-item --thumb">Высокое качество продукции</div>
+  <div class="benefits-item --file">Все товары сертифицированы</div>
+  <div class="benefits-item --check">Возможность доставки "Сегодня на сегодня"</div>    
+  <div class="benefits-item --list">Широкий ассортимент всегда в наличии</div>
+ </div> 
+</div>
+</section> 
+
+<main class="main">
+
+<div class="flex">
+  <div class="main-content">
+    <div class="wrapper">
+      <div class="breadcrumbs"><a href="/">Главная</a> <span>&gt;</span> <a href="#">Мой кабинет</a> <span>&gt;</span> Моя корзина</div>
+
+      <div class="checkout">
+
+      <div class="tabs-group"> 
+        <div class="checkout-panel flex">
+          <div class="checkout-panel__text">Товары в корзине:</div>
+          <div class="tabs flex flex-nowrap">
+            <a class="checkout-content-control active" href="#readyfororder">Готовые к заказу</a>
+            <a class="checkout-content-control" href="#layaway">Отложенные <span>(11)</span></a>
+          </div>
+        </div>
+
+       <div class="checkout-content-wrap tabs-content">
+        <div id="readyfororder"> 
+        <div class="checkout-content">        
+          <div class="checkout-item flex">
+            <div class="checkout-item__pic"><a href="#"><img src="../images/pics/cart-item1.png" alt=""/></a></div>
+            <div class="checkout-item__data flex">
+              <div class="checkout-item__data__col">
+               <div class="checkout-item__name"><a href="#">Багет ПВХ разделительный бежевый блестящий с длинным названием (2,5м)</a></div>
+               <div class="checkout-item__marking">Артикул: 000540</div>
+              </div>
+              <div class="checkout-item__data__col">
+                <div class="checkout-item__price">259.00 руб.</div>
+                <div class="checkout-item__discount">Скидка: 0%</div>
+                <div class="checkout-item__quantity">
+                  <div class="item-quantity-group flex flex-nowrap">
+                   <div class="item-quantity-down">-</div>
+                   <input id="quantity" class="item-quantity" type="text" value="5 шт" name="quantity">
+                   <div class="item-quantity-up">+</div>
+                  </div> 
+                </div>
+                <div class="checkout-item__total"><span>1 295.00</span> руб.</div>
+              </div> 
+              <div class="checkout-item__data__col">
+                <div class="btn gray-btn checkout-layaway-btn">Отложить</div>
+                <div class="btn gray-btn delete-from-checkout-btn">Удалить</div>               
+              </div>
+            </div>
+          </div>
+          <div class="checkout-item flex">
+            <div class="checkout-item__pic"><a href="#"><img src="../images/pics/cart-item2.png" alt=""/></a></div>
+            <div class="checkout-item__data flex">
+              <div class="checkout-item__data__col">
+               <div class="checkout-item__name"><a href="#">Багет ПВХ разделительный бежевый блестящий с длинным названием (2,5м)</a></div>
+               <div class="checkout-item__marking">Артикул: 000540</div>
+              </div>
+              <div class="checkout-item__data__col">
+                <div class="checkout-item__price">259.00 руб.</div>
+                <div class="checkout-item__discount">Скидка: 0%</div>
+                <div class="checkout-item__quantity">
+                  <div class="item-quantity-group flex flex-nowrap">
+                   <div class="item-quantity-down">-</div>
+                   <input id="quantity" class="item-quantity" type="text" value="5 шт" name="quantity">
+                   <div class="item-quantity-up">+</div>
+                  </div> 
+                </div>
+                <div class="checkout-item__total"><span>1 295.00</span> руб.</div>
+              </div> 
+              <div class="checkout-item__data__col">
+                <div class="btn gray-btn checkout-layaway-btn">Отложить</div>
+                <div class="btn gray-btn delete-from-checkout-btn">Удалить</div>               
+              </div>
+            </div>
+          </div>
+          <div class="checkout-item flex">
+            <div class="checkout-item__pic"><a href="#"><img src="../images/pics/cart-item3.png" alt=""/></a></div>
+            <div class="checkout-item__data flex">
+              <div class="checkout-item__data__col">
+               <div class="checkout-item__name"><a href="#">Багет ПВХ разделительный бежевый блестящий с длинным названием (2,5м)</a></div>
+               <div class="checkout-item__marking">Артикул: 000540</div>
+              </div>
+              <div class="checkout-item__data__col">
+                <div class="checkout-item__price">259.00 руб.</div>
+                <div class="checkout-item__discount">Скидка: 0%</div>
+                <div class="checkout-item__quantity">
+                  <div class="item-quantity-group flex flex-nowrap">
+                   <div class="item-quantity-down">-</div>
+                   <input id="quantity" class="item-quantity" type="text" value="5 шт" name="quantity">
+                   <div class="item-quantity-up">+</div>
+                  </div> 
+                </div>
+                <div class="checkout-item__total"><span>1 295.00</span> руб.</div>
+              </div> 
+              <div class="checkout-item__data__col">
+                <div class="btn gray-btn checkout-layaway-btn">Отложить</div>
+                <div class="btn gray-btn delete-from-checkout-btn">Удалить</div>               
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkout-final flex flex-between">
+         <div class="checkout-final__actions">
+          <div class="checkout-final__coupon">
+           <div class="checkout-final__coupon__text">Введите код купона для скидки:</div>
+           <form class="checkout-coupon-form flex flex-nowrap">
+              <input class="checkout-coupon-form__input" type="text" name="coupon" placeholder="Купон" />
+              <input class="btn red-btn checkout-coupon-form__submit" type="submit" disabled="disasbled" value=""/>
+           </form>
+          </div>
+         <div data-fancybox data-src="#checkout-modal" data-modal="true" class="btn red-btn checkout__submit-order-btn">Оформить заказ</div>
+         </div>
+         <div class="checkout-final__data">
+          <div class="checkout-final__data__row flex">
+            <div class="checkout-final__data__label">Товаров на:</div>
+            <div id="checkout-final__data__price" class="checkout-final__data__num">3885.00 руб.</div>
+          </div>
+          <div class="checkout-final__data__row flex">
+            <div class="checkout-final__data__label">В том числе НДС:</div>
+            <div id="checkout-final__data__tax" class="checkout-final__data__num">00.00 руб.</div>
+          </div>
+          <div class="checkout-final__data__row flex">
+            <div class="checkout-final__data__label">Итого:</div>
+            <div id="checkout-final__data__total" class="checkout-final__data__num">3885.00 руб.</div>
+          </div>
+         </div>
+        </div>
+       </div>
+
+
+      <div id="layaway">
+        <div class="checkout-content">  
+        <div class="checkout-item flex">
+            <div class="checkout-item__pic"><a href="#"><img src="../images/pics/cart-item1.png" alt=""/></a></div>
+            <div class="checkout-item__data flex">
+              <div class="checkout-item__data__col">
+               <div class="checkout-item__name"><a href="#">Багет ПВХ разделительный бежевый блестящий с длинным названием (2,5м)</a></div>
+               <div class="checkout-item__marking">Артикул: 000540</div>
+              </div>
+              <div class="checkout-item__data__col">
+                <div class="checkout-item__price">259.00 руб.</div>
+                <div class="checkout-item__discount">Скидка: 0%</div>
+                <div class="checkout-item__quantity">
+                  <div class="item-quantity-group flex flex-nowrap">
+                   <div class="item-quantity-down">-</div>
+                   <input id="quantity" class="item-quantity" type="text" value="5 шт" name="quantity">
+                   <div class="item-quantity-up">+</div>
+                  </div> 
+                </div>
+                <div class="checkout-item__total"><span>1 295.00</span> руб.</div>
+              </div> 
+              <div class="checkout-item__data__col">
+                <div class="btn gray-btn checkout-layaway-btn">Отложить</div>
+                <div class="btn gray-btn delete-from-checkout-btn">Удалить</div>               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+     </div>
+
+      </div>
+
+      </div>
+    
+  </div>
+  <div class="sidebar">
+    <ul class="sidebar-menu">
+     <li><a href="#">Багет ПВХ</a></li>
+     <li><a href="#">ALU-профиль</a></li>
+     <li><a href="#">Гибкий профиль Flext</a></li>
+     <li><a href="#">Гарпун</a>
+      <ul><li><a href="#">Вставка</a></li></ul>
+     </li>
+     <li><a href="#">Декоративный шнур</a></li>
+     <li><a href="#">Освещение Экола</a></li>
+     <li><a href="#">Карнизы и бленда</a></li>
+     <li><a href="#">Монтажные платформы</a></li>
+     <li><a href="#">Платформы для светильников</a></li>
+     <li><a href="#">Кольца протекторные</a></li>
+     <li><a href="#">Обводы труб</a></li>
+     <li><a href="#">Обводы труб (пластина)</a></li>
+     <li><a href="#">Термоквадраты</a></li>
+     <li><a href="#">Вентиляционные решетки</a></li>
+     <li><a href="#">Ревизионные люки</a></li>
+     <li><a href="#">Диффузоры, вентиляция</a></li>
+     <li><a href="#">Пластик ПВХ</a></li>
+     <li><a href="#">Клей, очиститель клея</a></li>
+     <li><a href="#">Брус, фанера</a></li>
+     <li><a href="#">Саморезы</a></li>
+     <li><a href="#">Дюбеля</a></li>
+     <li><a href="#">Подвесы</a></li>
+     <li><a href="#">Уголки</a></li>
+     <li><a href="#">Буры, биты, сверла</a></li>
+     <li><a href="#">Герметик, монтажная пена</a></li>
+     <li><a href="#">Электрика</a></li>
+     <li><a href="#">Сопутствующий товар</a></li>
+     <li><a href="#">«Звёздное небо»</a></li>
+     <li><a href="#">Инструменты</a></li>
+     <li><a href="#">Газовые баллоны, аксессуары</a></li>
+    </ul>
+  </div>
+</div>
+
+</main>
+
+
+<footer class="footer">
+  <div class="wrapper">
+   <div class="footer-inner flex flex-between">
+
+    <div class="footer-item">
+     <ul class="footer-menu">
+      <li><a href="#">Как сделать заказ?</a></li>
+      <li><a href="#">Оплата</a></li>
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Гарантия</a></li>
+     </ul> 
+    </div>
+
+   <div class="footer-item">
+    <ul class="footer-menu">
+     <li><a href="#">О нас</a></li>
+     <li><a href="#">Контакты</a></li>
+     <li><a href="#">Политика компании в отношении обработки персональных данных</a></li>
+    </ul>
+   </div>
+
+   <div class="footer-item">
+    <div class="footer-info">
+     <div class="footer-info__text">Интернет магазин оптовых цен Русилингс, 2020<br/>Все права защищены</div>
+     <div class="footer-info__socials flex">
+      <a class="footer-info__socials__fb" href="#"></a>
+      <a class="footer-info__socials__twitter" href="#"></a>
+      <a class="footer-info__socials__vk" href="#"></a>
+      <a class="footer-info__socials__youtube" href="#"></a>
+     </div> 
+    </div>
+  </div>
+
+   </div>
+  </div>
+</footer>
+
+</div><!-- /container	-->
+</div><!-- /page-->
+
+<div id="checkout-modal" class="modal checkout-modal">
+ 
+  <div id="modal-tabs-group" class="tabs-group"> 
+    <div class="tabs flex flex-nowrap">
+      <a class="active" href="#registered-user">Уже зарегистрирован</a>
+      <a href="#new-user">Новый покупатель</a>
+    </div>
+    <div class="tabs-content">  
+      <div id="registered-user">
+        <p>Если вы помните свой логин и пароль, то введите их в соответствующие поля:</p>
+        <form class="modal-login-form">
+          <input type="text" class="modal-login-form__input" name="username" placeholder="Логин" />
+          <input type="password" class="modal-login-form__input" name="password" placeholder="Пароль" />
+          <input type="submit" class="btn red-btn modal-login-form__submit" disabled="disasbled" value="Продолжить оформление заказа"/>
+        </form>
+        <p><a href="#">Если вы забыли пароль, нажмите сюда.</a></p>
+        <p>Все поля обязательные для заполнения. Личные сведения, полученные в распоряжение интернет-магазина при регистрации или каким-либо иным образом, не будут без разрешения пользователей передаваться третьим организациям и лицам за исключением ситуаций, когда этого требует закон или судебное решение.</p>  
+      </div>
+      <div id="new-user"></div>
+    </div>
+  </div>
+  </div>
+
+
+</body>
+</html>
