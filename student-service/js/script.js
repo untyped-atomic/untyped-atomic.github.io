@@ -14,11 +14,4 @@ $('.qna__set__question').click(function(){
    $('.text *:not(.text-unfold-btn-wrap)').show();
   });
   
-  $(window).on('load resize', function() {
-   if( $(window).width() < 1200)  {
-      $('.pinned-ok').insertAfter($('.jumbo-mbl'));     
-   	} else {
-   	$('.pinned-ok').insertAfter($('.get-price-top'));	
-   	}
-   });
 });
