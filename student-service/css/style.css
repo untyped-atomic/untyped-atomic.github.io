@@ -1636,6 +1636,7 @@ background-image: linear-gradient(0.0deg, #d5e6f4 0%, #0066b8 100%);
 padding: 16px 7px 43px 8px;
 margin-bottom: 15px;
 overflow: hidden;
+text-align:center;
 }
 .jumbo-mbl__title {
 background-image: linear-gradient(0.0deg, #5ea3df 0%, #ffffff 100%);
@@ -1646,7 +1647,7 @@ line-height: .8;
 text-transform: uppercase;
 }
 .jumbo-mbl__subtitle {
-font-size: 18.4px;
+font-size: 14px;
 line-height: .8;
 text-transform: uppercase;
 margin-bottom: 23px;
@@ -1656,14 +1657,14 @@ white-space: nowrap;
 font-family: 'Nickainley', cursive;
 font-size: 21px;
 line-height: 1.2;
-letter-spacing: 0.01em;
+letter-spacing: 0.07em;
 margin-bottom: 28px;
 }
 .jumbo-mbl__italic span {
-  letter-spacing: 0.058em;
+  letter-spacing: 0.12em;
 }
 .jumbo-mbl__line {
-font-size: 25.9px;
+font-size: 20px;
 line-height: 1;
 text-transform: uppercase;
 white-space: nowrap;
