@@ -16,7 +16,7 @@ $('.qna__set__question').click(function(){
   
   $(window).on('load resize', function() {
    if( $(window).width() < 1200)  {
-      $('.pinned-ok').insertAfter($('.jmb-mbl'));     
+      $('.pinned-ok').insertAfter($('.jumbo-mbl'));     
    	} else {
    	$('.pinned-ok').insertAfter($('.get-price-top'));	
    	}
