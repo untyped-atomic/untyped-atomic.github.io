@@ -16,9 +16,9 @@ $('.qna__set__question').click(function(){
   
   $(window).on('load resize', function() {
    if( $(window).width() < 1200)  {
-      $('.pinned-ok').appendTo($('.jmb-mbl'));     
+      $('.pinned-ok').insertAfter($('.jmb-mbl'));     
    	} else {
-   	$('.pinned-ok').appendTo($('.get-price-top'));	
+   	$('.pinned-ok').insertAfter($('.get-price-top'));	
    	}
    });
 });
