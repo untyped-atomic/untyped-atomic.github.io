@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'Impact';
     src: local('Impact'),
-    url('../fonts/Impact.ttf')) format('truetype');
+    url('../fonts/Impact.ttf') format('truetype');
+}
 @font-face {
     font-family: 'Nickainley';
     src: url('../fonts/Nickainley-Normal.eot');
