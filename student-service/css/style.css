@@ -1645,6 +1645,7 @@ overflow: hidden;
 .jumbo-mbl__title {
 background-image: linear-gradient(0.0deg, #5ea3df 0%, #ffffff 100%);
 font-size: 39.2px;
+font-weight: 700;    
 line-height: .8;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
