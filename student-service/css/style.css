@@ -160,7 +160,7 @@ background: url(../img/cell-bg.png) 50% 0 repeat;
 }
 .wrapper {
   width: 1180px;
-  max-width: calc(100% - 14px);
+  max-width: calc(100% - 28px);
   margin: 0 auto;
 }
 .header {
