@@ -1,9 +1,4 @@
 @font-face {
-    font-family: 'Impact';
-    src: local('Impact'),
-    url('../fonts/Impact.ttf') format('truetype');
-}
-@font-face {
     font-family: 'Nickainley';
     src: url('../fonts/Nickainley-Normal.eot');
     src: url('../fonts/Nickainley-Normal.eot?#iefix') format('embedded-opentype'),
@@ -1635,7 +1630,7 @@ margin: 0 auto;
 }
 .jumbo-mbl {
 display: block;
-font-family: 'Impact', sans-serif;
+font-family: 'Impact', Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
 color: #fff;
 background-image: linear-gradient(0.0deg, #d5e6f4 0%, #0066b8 100%);
 padding: 16px 7px 43px 8px;
