@@ -1706,6 +1706,14 @@ color: #fff!important;
 border-radius: 3px;
 margin: 0 auto;
 }
+.pinned-ok {
+-webkit-order: 1; 
+order: 1;
+}
+.get-price-top {
+-webkit-order: 2;    
+order: 2;  
+}
 .pinned__text {
     font-size: 62px;
   }
