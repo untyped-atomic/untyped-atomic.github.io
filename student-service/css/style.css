@@ -1643,7 +1643,7 @@ margin-bottom: 15px;
 overflow: hidden;
 }
 .jumbo-mbl__title {
-background-image: linear-gradient(0.0deg, #5ea3df 0%, #ffffff 100%);
+background-image: linear-gradient(0.0deg, #42b2e7 0%, #ffffff 100%);
 font-size: 39.2px;
 font-weight: 700;    
 line-height: .8;
@@ -2401,4 +2401,9 @@ font-size: 16px;
 .footer__nav__col:first-child {
 margin-right: auto;
 }
+}
+@media screen and (max-width: 340px) {
+    .wrapper {
+        max-width: calc(100% - 14px);
+    }
 }
