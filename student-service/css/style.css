@@ -1905,6 +1905,9 @@ margin-bottom: 26px;
 .header-bottom {
 top: 69px;
 }
+.offer-panel {
+padding: 30px 20px;
+}    
 .offer-panel-row {
    -khtml-box-lines:multiple;
   -webkit-box-lines:multiple;
@@ -1920,7 +1923,10 @@ top: 69px;
   display: none;
 }
 .offer-panel__title { 
-margin: 0 auto 14px;
+margin: 0 auto 20px;
+}
+.offer-panel__text {
+margin-bottom: 20px;
 }
 .offer-panel__btn {
   height: 40px;
