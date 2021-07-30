@@ -2268,6 +2268,14 @@ background-image: linear-gradient(0.0deg, #0665b3 0%, #4abbfd 100%);
 box-shadow: 1px 2px 4px 0px rgba(0,0,2,0.4);
 margin: 0 auto;
 }
+.subject-section-container, 
+.text-innerpage, 
+.recommended, 
+.recommended-city, 
+.steps, 
+.offer-panel {
+margin-bottom: 15px;
+}
 .pinned {
   height: 150px!important;
   margin-bottom: 15px;
@@ -2384,7 +2392,7 @@ column-gap: 0;
 
 @media screen and (max-width: 480px) {
 .recommended {
-padding-top: 30px;
+padding-top: 0;
 }  
 .steps__title, .subject__name {
 margin-top: 30px;
