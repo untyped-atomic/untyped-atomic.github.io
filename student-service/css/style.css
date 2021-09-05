@@ -1484,7 +1484,50 @@ color: #282828!important;
 @media screen and (max-width: 1199px) {
 .header__social__btn span {
 display: none;
-}  
+} 
+.jumbo-row {
+ -webkit-box-pack:justify;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+.jumbo__main {
+  width: 600px; 
+  margin-top: 40px;
+} 
+.jumbo__main__title {
+font-size: 70px;
+}
+.jumbo__main__subtitle {
+font-size: 20.5px;
+margin-top: 5px;
+}
+.jumbo__main__italic {
+font-size: 29px;
+}
+.jumbo__main__pep {
+font-size: 49px;
+}
+.jumbo__main__final {
+  width: 580px;
+  background-position: 0 4px;
+}
+.jumbo__main__final__intro {
+font-size: 30px;
+padding-top: 0;
+}
+.jumbo__main__final__intro__btm {
+    font-size: 21px;
+}
+.jumbo__main__final__central {
+    font-size: 52px;
+    margin-right: 24px;
+  }
+.jumbo__main__final__outro {
+    font-size: 32px;
+}
+.jumbo__main__final__outro span {
+    font-size: 19px;
+}
 .pinned-ok {
 -webkit-order: 1; 
 order: 1;
@@ -1733,26 +1776,75 @@ order: 2;
 
 
 @media screen and (max-width: 992px) {
-  .pinned {
-    padding-right: 50px!important;
-    padding-bottom: 200px!important;
-    background-position-y: 90%!important;
+  .jumbo__main {
+    width: 530px;
+    margin-top: 70px;
   }
- .pinned-victory {
-  padding-left: 50px!important;
-  padding-bottom: 220px!important; 
- } 
- .pinned-grin  {
-  padding-bottom: 240px!important;
- }
- .pinned-goofy {
-  padding-bottom: 220px!important; 
- }
-  .pinned__text {
-    font-size: 48px;
+  .jumbo__main__title {
+    font-size: 60px;
+}
+.jumbo__main__subtitle {
+    font-size: 17.5px;
+}
+.jumbo__main__subtitle span {
+padding-left: 36px;
+}
+.jumbo__main__subtitle span::before {
+  width: 25px;
+    height: 15px;
+    background-size: contain;
+}
+.jumbo__main__italic {
+    font-size: 25px;
+}
+.jumbo__main__pep {
+    font-size: 42px;
+}
+.jumbo__main__final {
+    padding-left: 53px;
+    width: 500px;
+}
+.jumbo__main__final__intro {
+    margin-right: 0;
+    font-size: 27px;
+}
+.jumbo__main__final__central {
+    font-size: 46px;
+    margin-right: 0;
+}
+.jumbo__main__final__intro__btm {
+    font-size: 19px;
+}
+.jumbo__main__final__outro {
+    font-size: 27px;
+}
+.jumbo__main__final__outro span {
+    font-size: 16px;
+}
+.pinned {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; 
+  padding: 11px 50px 23px 59px!important;
+  min-height: 201px;
+  background-size: 163px!important;
+}
+.pinned::before {
+width: 33px;
+height: 39px;
+top: -19px;
+left: 20px;
+background-size: contain;
 }
 .pinned-victory .pinned__text { 
   display: block;
+}
+.pinned__text {
+  width: 72%;
+  -webkit-align-self:center;
+  align-self:center;
+  font-size: 42px;
 }
   .qna__title {
   font-size: 30px; 
@@ -1838,6 +1930,76 @@ order: 2;
 }
 .search-box-mbl input:-moz-placeholder {
   color: transparent;
+}
+.jumbo {
+  height: auto;
+  padding: 27px 10px 26px 12px;
+  margin-bottom: 33px;
+}
+.jumbo__main {
+  width: 460px;
+  margin-top: 0;
+}
+.jumbo__main__title {
+    font-size: 54.5px;
+}
+.jumbo__main__subtitle {
+    font-size: 14.7px;
+}
+.jumbo__main__subtitle span::before {
+    top: 0;
+    width: 20px;
+    height: 14px;
+}
+.jumbo__main__italic {
+    font-size: 22.5px;
+    margin-bottom: 22px;
+}
+.jumbo__main__pep {
+    font-size: 38px;
+}
+.jumbo__main__final {
+    padding-left: 43px;
+    width: 450px;
+}
+.jumbo__main__final__intro {
+    font-size: 25px;
+}
+.jumbo__main__final__intro__btm {
+    font-size: 17.8px;
+}
+.jumbo__main__final__central {
+  font-size: 44px;
+}
+.jumbo__main__final__outro {
+  top: 0;
+}
+.jumbo__side {
+    width: 200px;
+    min-width: 200px;
+}
+.jumbo__side__cursive {
+    font-size: 37.4px;
+}
+.jumbo__side__cursive-after {
+    width: 198px;
+    height: 31px;
+    background: url(../img/text-ornament-mbl.png) 0 0 no-repeat;
+}
+.jumbo__side__group {
+    margin-bottom: 13px;
+}
+.jumbo__side__group__title {
+    font-size: 18px;
+}
+.jumbo__side__group-middle .jumbo__side__group-middle {
+  font-size: 20px;
+}
+.jumbo__side__group__text {
+    font-size: 11.6px;
+}
+ .pinned__text {
+  font-size: 36px;
 }
 }
 
@@ -2006,6 +2168,12 @@ top: unset;
 bottom: -3.5px;  
 left: 198px;
 transform: rotate3d(1, 1, 1, 5deg);
+}
+.pinned {
+  background-position-x: 98%!important;
+}
+.pinned__text {
+  text-align: left!important;
 }
 .pinned__text .d-block  {
   display: inline;
@@ -2248,7 +2416,6 @@ background-color: #ececec;
 border: 1px solid #0061b0;
 box-shadow: 1px 2px 4px 0px rgba(0,0,2,0.4);
 position: absolute;
-top: 44px;
 right: 8px;
 padding-left: 12px;
 border-radius: 5px;
@@ -2514,15 +2681,15 @@ margin: 0 auto;
 }
 
 @media screen and (max-width: 700px) {
-  .pinned-notice {
-    padding-bottom: 220px!important;
-  }
   .page404__top__404 {
     font-size: 120px;
 }
 }
 
 @media screen and (max-width: 600px) {
+  .pinned {
+    padding-left: 30px!important;
+  }
   .page404__top {
     left: 50px;
   }
@@ -2644,9 +2811,11 @@ margin: 0 auto;
 margin-bottom: 15px;
 }
 .pinned {
+  display: block;
   height: 150px!important;
+  min-height: unset;
   margin-bottom: 15px;
-  background-size: 65px; 
+  background-size: 65px!important; 
 }
 .pinned::before {
 width: 20px;
@@ -2658,12 +2827,12 @@ top: -12px;
 .pinned-ok {
 padding: 31px 10px 0!important;
 background-position: calc(100% - 15px) 83px;
-background-size: 71px;
+background-size: 71px!important;
 }
 .pinned-delighted {
 padding: 20px 13px 0!important;  
 background-position: calc(100% - 9px) 74px;
-background-size: 114px;
+background-size: 114px!important;
 }
 .pinned-hm {
 padding: 21px 0 0 4px!important;
@@ -2708,6 +2877,7 @@ background-position: calc(100% - 16px) 90%!important;
   display: block!important;
 }
 .pinned__text {
+ width: auto; 
 font-size: 25px;
 }
 .pinned-hm .pinned__text {
