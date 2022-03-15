@@ -1,0 +1,666 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Главная</title>
+	<meta name="description" content="" />
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<script src="js/jquery-3.4.1.min.js"></script> 
+  <script src="js/jquery.inputmask.bundle.min.js"></script> 
+  <script src="js/bootstrap.min.js"></script> 
+    <script src="js/script.js" type="text/javascript"></script>
+</head>
+
+<body>  
+
+    <header class="header">
+      <div class="header-top fixed-top"> 
+        <div class="container">
+          <div class="flex header-top__row"> 
+
+          	<div class="logo header__logo">
+              <a class="d-block" href="/"><img src="svg/logo.svg" alt="логотип" /></a>
+        	  <div class="logo__text header__logo__text">ФСК-Мастер Центр быстрого <span class="d-inline d-md-block">ремонта бытовой техники</span></div>
+            </div>
+            <div class="hours header__hours d-none d-xl-block">
+              Пн-Пт: 9:00–18:00
+              <span class="d-block">Сб-Вс: выходной</span>	
+            </div>
+            <div class="address header__address d-none d-xl-block">
+            	г. Москва, Авиационная улица, д.68 
+                <span class="d-block">(м. Щукинская)</span>
+            </div>
+            <div class="header__col flex">
+            <div class="contacts header__contacts">
+              <div class="phone header__phone"><a href="tel:+74951435262">+7 (495) 143 52 62 </a></div>
+              <div class="mail header__mail text-right d-none d-md-block"><a href="mailto:info@fsk-master.ru">info@fsk-master.ru</a></div>
+            </div>            
+            <div class="button header__button" data-bs-toggle="modal" data-bs-target="#orderModal">Заказать ремонт</div>
+          </div>
+            </div>           
+        </div>
+       </div>
+
+      <div class="header-bottom">
+        <div class="container">
+         <div class="flex">
+       	   <nav class="header__nav" id="navbarsExample01">
+       	   	<ul class="top-menu flex flex-align-center">
+       	   	  <li class="has-dropdown"><span>Ремонт</span>
+                <ul class="dropdown-menu">
+                  <li class="has-submenu"><a class="category-link" href="#">
+                      <div><img src="img/icon-tv.png" alt="" /></div>
+                      <span>Телевизоров</span>
+                    </a>
+                    <div class="submenu">
+                    <ul class="subcat-menu">
+                      <li><a href="#">Ремонт ТВ Samsung</a></li>
+                    </ul>
+                  </div>
+                  </li>
+                  <li class="has-submenu"><a class="category-link" href="#">
+                    <div><img src="img/icon-monitor.png" alt="" /></div>
+                    <span>Мониторов</span>
+                  </a>
+                  <div class="submenu">
+                  <ul class="subcat-menu">
+                      <li><a href="#">Ремонт ТВ Samsung</a></li>
+                    </ul>
+                  </div>
+                  </li>
+                  <li class="has-submenu"><a class="category-link" href="#">
+                    <div><img src="img/icon-washing.png" alt="" /></div>
+                    <span>Стиральных машин</span>
+                  </a>
+                  <div class="submenu">
+                  <ul class="subcat-menu">
+                      <li><a href="#">Ремонт ТВ Samsung</a></li>
+                    </ul>
+                  </div>
+                  </li>
+                  <li class="has-submenu"><a class="category-link" href="#">
+                    <div><img src="img/icon-fridge.png" alt="" /></div>
+                    <span>Холодильников</span>
+                  </a>
+                  <div class="submenu">
+                  <ul class="subcat-menu">
+                      <li><a href="#">Ремонт ТВ Samsung</a></li>
+                    </ul>
+                  </div>
+                  </li>
+                  <li class="has-submenu"><a class="category-link" href="#">
+                    <div><img src="img/icon-dishwashing.png" alt="" /></div>
+                    <span>Посудомоечных машин</span>
+                  </a>
+                  <div class="submenu">
+                  <ul class="subcat-menu">
+                      <li><a href="#">Ремонт ТВ Samsung</a></li>
+                    </ul>
+                  </div>
+                  </li>
+                  <li class="has-submenu"><a class="category-link" href="#">
+                    <div><img src="img/icon-microvave.png" alt="" /></div>
+                    <span>Микроволновок</span>
+                  </a>
+                  <div class="submenu">
+                  <ul class="subcat-menu">
+                      <li><a href="#">Ремонт ТВ Samsung</a></li>
+                    </ul>
+                  </div>
+                  </li>
+                  <li class="has-submenu"><a class="category-link" href="#">
+                    <div><img src="img/icon-coffee.png" alt="" /></div>
+                    <span>Кофемашин</span>
+                  </a>
+                  <div class="submenu">
+                  <ul class="subcat-menu">
+                      <li><a href="#">Ремонт ТВ Samsung</a></li>
+                    </ul>
+                  </div>
+                  </li>
+                  <li class="has-submenu"><a class="category-link" href="#">
+                    <div><img src="img/icon-plate.png" alt="" /></div>
+                    <span>Варочных панелей</span>
+                  </a>
+                  <div class="submenu">
+                  <ul class="subcat-menu">
+                      <li><a href="#">Ремонт ТВ Samsung</a></li>
+                    </ul>
+                  </div>
+                  </li>
+                  <li class="has-submenu"><a class="category-link" href="#">
+                    <div><img src="img/icon-oven.png" alt="" /></div>
+                    <span>Духовых шкафов</span>
+                  </a>
+                  <div class="submenu">
+                  <ul class="subcat-menu">
+                      <li><a href="#">Ремонт ТВ Samsung</a></li>
+                    </ul>
+                  </div>
+                  </li>
+                </ul>
+              </li>
+       	   	  <li class="has-dropdown"><span>Установка</span>
+                <ul class="dropdown-menu">
+                  <li class="has-submenu"><a class="category-link" href="#">
+                      <div><img src="img/icon-tv.png" alt="" /></div>
+                      <span>Телевизоров</span>
+                    </a>
+                    <div class="submenu">
+                    <ul class="subcat-menu">
+                      <li><a href="#">Ремонт ТВ Samsung</a></li>
+                    </ul>
+                  </div>
+                  </li>
+                  <li class="has-submenu"><a class="category-link" href="#">
+                    <div><img src="img/icon-monitor.png" alt="" /></div>
+                    <span>Мониторов</span>
+                  </a>
+                  <div class="submenu">
+                  <ul class="subcat-menu">
+                      <li><a href="#">Ремонт ТВ Samsung</a></li>
+                    </ul>
+                  </div>
+                  </li>
+                  <li class="has-submenu"><a class="category-link" href="#">
+                    <div><img src="img/icon-washing.png" alt="" /></div>
+                    <span>Стиральных машин</span>
+                  </a>
+                  <div class="submenu">
+                  <ul class="subcat-menu">
+                      <li><a href="#">Ремонт ТВ Samsung</a></li>
+                    </ul>
+                  </div>
+                  </li>
+                  <li class="has-submenu"><a class="category-link" href="#">
+                    <div><img src="img/icon-fridge.png" alt="" /></div>
+                    <span>Холодильников</span>
+                  </a>
+                  <div class="submenu">
+                  <ul class="subcat-menu">
+                      <li><a href="#">Ремонт ТВ Samsung</a></li>
+                    </ul>
+                  </div>
+                  </li>
+                  <li class="has-submenu"><a class="category-link" href="#">
+                    <div><img src="img/icon-dishwashing.png" alt="" /></div>
+                    <span>Посудомоечных машин</span>
+                  </a>
+                  <div class="submenu">
+                  <ul class="subcat-menu">
+                      <li><a href="#">Ремонт ТВ Samsung</a></li>
+                    </ul>
+                  </div>
+                  </li>
+                  <li class="has-submenu"><a class="category-link" href="#">
+                    <div><img src="img/icon-microvave.png" alt="" /></div>
+                    <span>Микроволновок</span>
+                  </a>
+                  <div class="submenu">
+                  <ul class="subcat-menu">
+                      <li><a href="#">Ремонт ТВ Samsung</a></li>
+                    </ul>
+                  </div>
+                  </li>
+                  <li class="has-submenu"><a class="category-link" href="#">
+                    <div><img src="img/icon-coffee.png" alt="" /></div>
+                    <span>Кофемашин</span>
+                  </a>
+                  <div class="submenu">
+                  <ul class="subcat-menu">
+                      <li><a href="#">Ремонт ТВ Samsung</a></li>
+                    </ul>
+                  </div>
+                  </li>
+                  <li class="has-submenu"><a class="category-link" href="#">
+                    <div><img src="img/icon-plate.png" alt="" /></div>
+                    <span>Варочных панелей</span>
+                  </a>
+                  <div class="submenu">
+                  <ul class="subcat-menu">
+                      <li><a href="#">Ремонт ТВ Samsung</a></li>
+                    </ul>
+                  </div>
+                  </li>
+                  <li class="has-submenu"><a class="category-link" href="#">
+                    <div><img src="img/icon-oven.png" alt="" /></div>
+                    <span>Духовых шкафов</span>
+                  </a>
+                  <div class="submenu">
+                  <ul class="subcat-menu">
+                      <li><a href="#">Ремонт ТВ Samsung</a></li>
+                    </ul>
+                  </div>
+                  </li>
+                </ul> 
+              </li> 
+       	   	  <li><a href="#">Запчасти</a></li>
+       	   	  <li><a href="#">Гарантии</a></li> 
+       	   	  <li><a href="#">Контакты</a></li>
+       	    </ul>
+       	   </nav>
+           <div class="hm-btn d-block d-xl-none">
+             <div></div>
+             <div></div>
+             <div></div>
+           </div>
+       	   <div class="header__search"> 
+              <form class="header__searchbox">
+               <div class="flex">
+       	   	     <input class="header__searchbox__input" type="text" placeholder="Поиск" />
+                 <input class="header__searchbox__submit" type="submit" value="" />
+               </div>
+             </form>
+       	   </div>
+       	   <a href="#" class="d-block header__cart">
+       	   	 <span class="d-none d-xl-block header__cart__items">4 товара</span>
+       	   	 <span class="d-none d-xl-block header__cart__sum">3 500 Р</span>
+       	   </a>
+        </div>  
+        </div>
+
+       </div>
+</header>
+<main class="main">
+
+
+<div class="top-offer">
+<div class="container">
+    <div class="row">
+      <div class="col-12">
+  <div class="top-offer__text">
+    <div class="top-offer__title">Центр быстрого ремонта <span class="d-block">бытовой техники</span></div>
+    <ul class="checklist top-offer__checklist">
+      <li>профессиональный ремонт</li>
+      <li>честные цены</li>
+      <li>гарантия на все виды работ</li>
+    </ul>
+    <div class="button top-offer__button" data-bs-toggle="modal" data-bs-target="#orderModal">Заказать ремонт</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="about">
+  <div class="container">
+    <div class="row">
+      <div class="d-none d-md-block col-md-5">
+       <div class="about__pic">
+        <img class="img-fluid" src="img/service.png" alt="" />
+       </div>
+      </div>
+      <div class="col-12 col-md-7 about__content">
+        <h1>Сервисный центр ФСК-Мастер
+        <span class="d-block">- мастерская по ремонту, обслуживанию крупной и малой бытовой техники в Москве и области</span></h1>
+        <div class="about__text">
+          <p>Сегодня невозможно представить комфортную жизнь без стиральной машины, холодильника или телевизора. Восстановиммелкую и крупную техники по самым доступным ценам. У нас отсутствуют скрытые накрутки. Опытным мастерам можно поручить замену изношенных деталей, установку крупногабаритных приборов и настройку их оптимальной работы.</p>
+          <p>Квалифицированные мастера в сжатые сроки проведут <a href="#">ремонт крупной бытовой техники в Москве</a> следующих видов:</p>
+        </div>
+      </div>	
+    </div>
+  </div>
+</div>
+
+<div class="catalog">
+	<h2 class="text-center">Каталог</h2>
+  <div class="container">
+    <div class="row">
+    	<div class="col-12">
+      <ul class="nav nav-tabs row" id="catalogTab" role="tablist">
+  <li class="nav-item col-sm-4" role="presentation">
+    <div class="nav-link text-center active" id="service-tab" data-bs-toggle="tab" data-bs-target="#service" type="div" role="tab" aria-controls="service" aria-selected="true">
+      <div class="nav-link__row flex flex-center flex-align-center">
+        <img class="icon-reg" src="svg/tab-gears-gray.svg" />
+        <img class="icon-hover" src="svg/tab-gears-red.svg" />
+        <img class="icon-active" src="svg/tab-gears.svg" />
+        <span class="nav-link__text nav-link__text-gears">Ремонт</span>
+      </div>
+    </div>
+  </li>
+  <li class="nav-item col-sm-4" role="presentation">
+    <div class="nav-link text-center" id="installation-tab" data-bs-toggle="tab" data-bs-target="#installation" type="div" role="tab" aria-controls="installation" aria-selected="false">
+      <div class="nav-link__row flex flex-center flex-align-center">
+      <img class="icon-reg" src="svg/tab-key.svg" />
+      <img class="icon-hover" src="svg/tab-key-red.svg" />
+      <img class="icon-active" src="svg/tab-key-white.svg" />
+        <span class="nav-link__text nav-link__text-key">Установка</span>
+</div>
+    </div>
+  </li>
+  <li class="nav-item col-sm-4" role="presentation">
+    <div class="nav-link text-center" id="spare-tab" data-bs-toggle="tab" data-bs-target="#spare" type="div" role="tab" aria-controls="spare" aria-selected="false">
+      <div class="nav-link__row flex flex-center flex-align-center">
+      <img class="icon-reg" src="svg/tab-key.svg" />
+      <img class="icon-hover" src="svg/tab-key-red.svg" />
+      <img class="icon-active" src="svg/tab-key-white.svg" />
+        <span class="nav-link__text nav-link__text-key">Запчасти</span>
+      </div>
+    </div>
+  </li>
+</ul>
+<div class="tab-content" id="catalogTabContent">
+  <div class="tab-pane fade show active" id="service" role="tabpanel" aria-labelledby="service-tab">
+    <div class="catalog__tab-row flex flex-wrap">
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-tv.png" alt="" /></span>
+        Ремонт <span class="d-block">телевизоров</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-monitor.png" alt="" /></span>
+        Ремонт <span class="d-block">мониторов</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-washing.png" alt="" /></span>
+        Ремонт <span class="d-block">стиральных машин</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-fridge.png" alt="" /></span>
+        Ремонт <span class="d-block">холодильников</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-dishwashing.png" alt="" /></span>
+        Ремонт <span class="d-block">посудомоечных машин</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-microvave.png" alt="" /></span>
+        Ремонт <span class="d-block">микроволновок</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-coffee.png" alt="" /></span>
+        Ремонт <span class="d-block">кофемаши</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-plate.png" alt="" /></span>
+        Ремонт <span class="d-block">варочных панелей</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-oven.png" alt="" /></span>
+        Ремонт <span class="d-block">духовых шкафов</span>
+      </a> 
+    </div>
+  </div>
+  <div class="tab-pane fade" id="installation" role="tabpanel" aria-labelledby="installation-tab">
+     <div class="catalog__tab-row flex flex-wrap">
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-tv.png" alt="" /></span>
+        Ремонт <span class="d-block">телевизоров</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-monitor.png" alt="" /></span>
+        Ремонт <span class="d-block">мониторов</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-washing.png" alt="" /></span>
+        Ремонт <span class="d-block">стиральных машин</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-fridge.png" alt="" /></span>
+        Ремонт <span class="d-block">холодильников</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-dishwashing.png" alt="" /></span>
+        Ремонт <span class="d-block">посудомоечных машин</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-microvave.png" alt="" /></span>
+        Ремонт <span class="d-block">микроволновок</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-coffee.png" alt="" /></span>
+        Ремонт <span class="d-block">кофемаши</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-plate.png" alt="" /></span>
+        Ремонт <span class="d-block">варочных панелей</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-oven.png" alt="" /></span>
+        Ремонт <span class="d-block">духовых шкафов</span>
+      </a> 
+    </div>
+  </div>
+  <div class="tab-pane fade" id="spare" role="tabpanel" aria-labelledby="spare-tab">
+      <div class="catalog__tab-row flex flex-wrap">
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-tv.png" alt="" /></span>
+        Ремонт <span class="d-block">телевизоров</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-monitor.png" alt="" /></span>
+        Ремонт <span class="d-block">мониторов</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-washing.png" alt="" /></span>
+        Ремонт <span class="d-block">стиральных машин</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-fridge.png" alt="" /></span>
+        Ремонт <span class="d-block">холодильников</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-dishwashing.png" alt="" /></span>
+        Ремонт <span class="d-block">посудомоечных машин</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-microvave.png" alt="" /></span>
+        Ремонт <span class="d-block">микроволновок</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-coffee.png" alt="" /></span>
+        Ремонт <span class="d-block">кофемаши</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-plate.png" alt="" /></span>
+        Ремонт <span class="d-block">варочных панелей</span>
+      </a>
+      <a href="#" class="catalog__tab-item">
+        <span class="catalog__tab-item__pic"><img src="img/cat-oven.png" alt="" /></span>
+        Ремонт <span class="d-block">духовых шкафов</span>
+      </a> 
+    </div> 
+  </div>
+</div>
+
+    </div>
+   </div>
+  </div>	
+</div>
+
+<div class="repair-service">
+ <div class="container">
+  <div class="repair-service__info">
+    <h2>Ремонт бытовой техники в Москве и области</h2>  
+    <div class="repair-service__info__text">
+      <p>Бытовая и кухонная техника позволяет сделать жизнь проще и сэкономить время. Но, о значимости того или иного электрического прибора мы вспоминаем только в момент его выхода из строя. Наши мастера способны выполнить починку любого электронного и цифрового устройства. Начиная от варочной панели и заканчивая посудомоечной машиной. Обратившись в ателье «ФСК-Мастер» своевременно, можно исключить проблемы, связанных с поломкой техники.</p>
+      <p>Мы предлагаем:</p>
+    </div>
+    <ul class="checklist repair-service__checklist">
+      <li>Оперативный ремонт на дому. Выполним срочный выезд на адрес заказчика.</li> 
+      <li>Доставку техники в ремонтные мастерские. Предоставим собственную службу перевозки.</li> 
+      <li>Гарантию на все виды работ. Качественно отремонтируем старую и новую электронику.</li>
+    </ul>
+    <div class="note repair-service__note">
+      <div class="note__title">Обратите внимание:</div>
+      <div class="note__text">В структуру нашей фирмы входит большой склад оригинальных запчастей для самых популярных моделей бытовой техники. Это позволяет ускорить процесс ее восстановления. Клиенту не придется ждать, пока нужная деталь будет доставлена.</div>
+    </div>
+  </div>
+ </div>
+</div>
+
+<div class="benefits">
+  <div class="container">
+    <h2>Преимущества обращения в компанию <span class="d-block">«ФСК-Мастер»</span></h2>
+    <p>Многие владельцы после поломки утилизируют прибор. Но, мы уверены, что по окончании ремонта ваши холодильники, телевизоры или стиральные машины предложат долго радовать своей работой. Так зачем тратить деньги, если можно сэкономить без потери качества? Вызовите сотрудника сервиса по ремонту бытовой техники«ФСК-Мастер». Он произведет диагностику и расскажет, есть ли смысл проводить восстановление технического устройства. В 80% случаев это экономически выгодно и оправдано.</p>
+    <p>Мы отремонтируем даже самую безнадежную российскую и импортную технику. Выполним прием любых устройств. Большинство работ проводятся нашими мастерами на дому. Сотрудников «ФСК-Мастер» можно вызвать в районы Москвы: Строгино, Митино и Тушино,а также в Мытищи, Химки, Красногорск и Долгопрудный. После диагностики мастер рассчитает стоимость работ, которая останется неизменной до конца ремонта. Это выгодно отличает услуги нашего сервисного центра от других мастерских.    </p>
+    <div class="benefits__title">Предоставляем своим клиентам следующие преимущества:</div>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="benefits-item benefits-item__pro">
+          Профессиональный ремонт 
+          <span class="d-xl-block">любых марок и моделей бытовой</span> 
+          <span class="d-xl-block">техники.</span>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="benefits-item benefits-item__time">Выполнение работ
+          <span class="d-xl-block">в сжатые сроки. Экономим</span>
+          <span class="d-xl-block">время заказчиков.</span>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="benefits-item benefits-item__personal">Индивидуальный подход
+          <span class="d-xl-block">к восстановлению каждого</span>
+          <span class="d-xl-block">бытового прибора.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="note-wrap">
+ <div class="container">
+  <div class="row">
+   <div class="col-12">
+    <div class="note">
+      <div class="note__title">Обратите внимание:</div>
+      <div class="note__text">Все мастера нашего сервисного центра обладают высокой квалификацией. Она подтверждена сертификатами производителей бытовой техники. Ежегодно каждый сотрудники «ФСК-Мастер» проходит стажировку по повышению своего уровня.</div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+
+<div class="text">
+ <div class="container">
+  <div class="row">
+   <div class="col-12">
+     <p>Не откладывайте решение проблем с вашей бытовой техники на потом. Звоните в <a href="#">центр ремонта бытовой техники</a> «ФСК-Мастер» сразу после выявления проблемы и проведите ее описание. Это поможет мастеру быстрее разобраться в поломке. Выполним гарантийный ремонт и обслуживание крупной бытовой техники. Если у вас есть вопросы, задайте их нам с помощью контактов, указанных на этой странице.</p>
+   </div>
+  </div>
+ </div>
+</div>
+
+<div class="coverage">
+ <div class="container">
+  <div class="row">
+   <div class="col-12">
+    <h2 class="text-white">Районы обслуживания</h2>    
+   </div>
+   <div class="col-12 col-md-6">
+    <div class="coverage-item">
+      <div class="coverage-item__title">Москва:</div> 
+      <div class="coverage-item__text">Строгино, Митино, Тушино</div>
+    </div>
+   </div>
+   <div class="col-12 col-md-6">
+    <div class="coverage-item">
+      <div class="coverage-item__title">Московская область:</div>
+      <div class="coverage-item__text">Мытищи, Химки, Красногорск, Долгопрудный</div>
+    </div>
+   </div>
+  </div>
+ </div> 
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+  <div class="row">
+   <div class="col-sm-6 col-md-3">
+     <div class="logo footer__logo">
+        <a class="d-block" href="/"><img src="svg/logo.svg" alt="логотип" /></a>
+        <div class="logo__text footer__logo__text">ФСК-Мастер Центр быстрого <span class="d-block">ремонта бытовой техники</span></div>
+      </div>
+      <div class="contacts footer__contacts">
+        <div class="phone footer__phone"><a href="tel:+74951435262 ">+7 (495) 143 52 62 </a></div>
+        <div class="mail footer__mail"><a href="mailto:info@fsk-master.ru">info@fsk-master.ru</a></div>
+      </div>
+   </div>
+   <div class="col-sm-6 col-md-3">
+      <div class="footer__title">Услуги</div>
+      <ul class="footer-menu">
+        <li><a href="#">Ремонт</a></li>
+        <li><a href="#">Установка</a></li>
+        <li><a href="#">Запчасти</a></li>
+      </ul>
+   </div>
+   <div class="col-sm-6 col-md-3">
+      <div class="footer__title">Информация</div>
+      <ul class="footer-menu">
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Карта сайта</a></li>
+      </ul>
+   </div>
+   <div class="col-sm-6 col-md-3">
+      <div class="footer__title">Контакты</div>
+      <div class="address footer__address">
+        г. Москва, Авиационная
+        <span class="d-block">улица, д.68  (м. Щукинская)</span>
+      </div>
+      <div class="hours footer__hours">
+        Пн-Пт: 9:00–18:00
+        <span class="d-block">Сб-Вс: выходной</span>  
+       </div>    
+   </div>
+   <div class="col-12 footer__disclaimer">Обращаем ваше внимание на то, что вся представленная на сайте информация, касающаяся стоимости, сроков, и порядка предоставления товаров и услуг, носит информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ ООО «ФСК» не несет ответственности перед клиентом за прямые или косвенные убытки, упущенную выгоду или иной ущерб, возникшие в результате выхода из строя отремонтированного, установленного или приобретенного оборудования.</div>
+   <div class="col-12 footer__copy text-center">2022 Все права защищены</div>
+ </div>
+</div>
+</footer>
+
+
+
+<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-title text-center" id="orderModalLabel">Опишите проблему или позвоните нам  
+          <span class="d-block">+7 (495) 143 52 62</span>
+        </div>
+      <div class="modal-body">
+        <form class="order-form" id="order-form" method="post" action="/feedback/">
+          <div class="order-form__row flex flex-wrap flex-between">
+            <input type="text" class="order-form__input" name="name" required="required" placeholder="Ваше имя" />
+            <input type="text" class="order-form__input" name="phone" required="required" placeholder="Телефон" />
+          </div>
+          <textarea class="order-form__input order-form__textarea" required="required" placeholder="Опишите проблему"></textarea>            
+        <label class="checkbox-container flex">
+          <input type="checkbox" onchange="document.getElementById('modal-form-submit').disabled = !this.checked;" checked />
+          <span class="checkmark"></span>
+          Согласен с условиями обработки персональных данных
+        </label>
+        <input type="submit" id="modal-form-submit" class="button order-form__submit mx-auto" value="Отправить" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="success-icon"><img class="mx-auto" src="svg/success.svg" alt="" /></div>
+      <div class="modal-title text-center" id="successModalLabel">Заявка принята</div>
+      <div class="modal-body">
+        <p class="text-center">в самое ближайшее время наш мастер <pan class="d-block">позвонит вам.</pan></p>
+        <div class="button ok-button mx-auto" data-bs-dismiss="modal" aria-label="Close">Ок</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
