@@ -221,43 +221,6 @@ $('.mbl-expand-btn').click(function(){
 $('.input-phone').inputmask({
   "mask":"+370 999 999 99",clearMaskOnLostFocus:false});
 
-// Map
-jQuery(document).ready(function ($) {
-  google.maps.event.addDomListener(window, 'load', init);
-  var mapStyle =  [
-{
-featureType: 'landscape',
-elementType: 'geometry',
-stylers: [
-{hue: '#cccccc'},
-{saturation: -100},
-{lightness: -10},
-{visibility: 'on'}
-]
-}
-];
-  function init() {
-    var contactsMap = {
-        zoom: 17,
-        center: new google.maps.LatLng(54.686192, 25.285962),
-        styles: mapStyle
-    };
-    
-    var footerMap = document.getElementById('footer-map');
-
-    var map = new google.maps.Map(footerMap,contactsMap);
-
-    var image = 'images/img/pin.png';
-
-    var marker = new google.maps.Marker({
-    position: {lat: 54.686192, lng: 25.285962},
-    map: map,
-    icon: image
-    });
-     
-  }
-});
-
 // Update little cart data
 let littleCartNum = $('#little-cart-num').html();
 littleCartNum = Number(littleCartNum);
